@@ -26,7 +26,7 @@ public class SectorActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
 
-        if (savedInstanceState == null) {
+        if (savedInstanceState != null) {
             sectionAdapter = new SectionAdapter(savedInstanceState.<Section>getParcelableArrayList("seccion"));
         }
         else {

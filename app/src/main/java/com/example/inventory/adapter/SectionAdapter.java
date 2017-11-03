@@ -62,7 +62,7 @@ public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.SectionV
         holder.txtV_SectionName.setText(sections.get(position).getName());
 
         if (sections.get(position).isDefaultSection())
-           holder.txtV_SectionShortName.setText(sections.get(position).getShortName());
+           holder.txtV_SectionShortName.setText(sections.get(position).getName());
     }
 
     /**
